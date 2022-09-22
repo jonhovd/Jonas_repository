@@ -43,7 +43,7 @@ ctx.fillRect(710, 20, 30, 230);
 // Finske flagget
 ctx.fillStyle = 'white';
 ctx.fillRect(600, 350, 400, 250);
-ctx.fillStyle = 'red'; //blue
+ctx.fillStyle = '#002F6C'; //blue
 ctx.fillRect(600, 440, 400, 70);
 ctx.fillRect(710, 350, 70, 250);
 
