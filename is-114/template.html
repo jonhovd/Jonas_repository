@@ -23,7 +23,10 @@
 <body>
 <!-- Her (i body-elementet) skrives alt innhold, som påvirker tegning på skjermen. -->
 <form>
-  <input type="text" name="navn" />
+  <label for="navn">Navn</label>
+  <input type="text" name="navn" required/>
+  <label for="epost">E-post</label>
+  <input type="email" name="epost" />
 </form>
 
 <script>
