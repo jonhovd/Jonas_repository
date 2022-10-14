@@ -1,9 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #ffffff;
+    background-color: darkkhaki;
     color: black;
     display: flex;
     flex-direction: column;
@@ -15,3 +11,13 @@ body {
 
 }
 
+h1{
+    color: white;
+    font-family: "Arial Black", sans-serif;
+}
+
+p{
+    color: white;
+    font-family: Consolas, sans-serif;
+
+}
