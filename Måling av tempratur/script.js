@@ -1,7 +1,7 @@
 function temperatureConverter(valNum) {
     valNum = parseFloat(valNum);
-    document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
-    document.getElementById("outputFarenheit").innerHTML=
-    document.getElementById("outputKelvin").innerHTML=(valNum-32)/1.8 + 273.15;
+    document.getElementById("outputCelsius").innerHTML=(valNum-500)/10;
+    document.getElementById("outputFarenheit").innerHTML=(valNum-500)/10 + 32;
+    document.getElementById("outputKelvin").innerHTML=(valNum-500)/10 + 273.15;
 }
 
