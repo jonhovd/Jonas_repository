@@ -6,14 +6,16 @@
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
-<h1>Tempratur måling</h1>
+<h1>TMP36</h1>
 
-<label id="aLabel">mv:</label><br>
-<input type="number" id="aTextBox"><br>
-<button type="button" id="submitButton">submit</button><br>
-<label id="bLabel">Celsius:</label><br>
-<label id="cLabel">Farenheit:</label><br>
-<label id="dLabel">Kelvin:</label><br>
+<p>
+<label mV></label>
+<input id="inPutMv" type="number" placeholder="mV" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+<p>Farenheit <span id="outputFarenheit"></span></p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+
 
 
 <canvas id="canvas" width="600"
