@@ -1,3 +1,5 @@
+
+// Formelen for utregning fra mV til tempraturverdiene (output)
 function temperatureConverter(valNum) {
     valNum = parseFloat(valNum);
     document.getElementById("outputCelsius").innerHTML=(valNum-500)/10;
