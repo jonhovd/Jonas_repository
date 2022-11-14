@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p id="">{"navn": "Jonas"}</p>
+
+  <script>
+    function innerText() {
+      return '<p id="navn">{"navn": "Jonas"}</p>';
+    }
+  </script>
+
+<script>
+  // Definerer tester
+  function testInnerText() {
+    forventetInnerText = '<p id="navn">{"navn": "Jonas"}</p>';
+    iText = innerText();
+    console.assert(forventetInnerText === iText, { forventetInnerText, iText});
+    console.log("Tester godkjent");
+  }
+  // Kjører tester
+  testInnerText();
+</script>
+
+
+
+</body>
+</html>
