@@ -5,11 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-  <p id="">{"navn": "Jonas"}</p>
+
 
   <script>
     function innerText() {
-      return '<p id="navn">{"navn": "Jonas"}</p>';
+      pEl = document.createElement("p");
+      pEl.setAttribute("id", "navn");
+      pEl.innerText ='{"navn": "Jonas"}';
+      //return pEl.outerHTML;
+        return pEl;
     }
   </script>
 
@@ -18,11 +22,12 @@
   function testInnerText() {
     forventetInnerText = '<p id="navn">{"navn": "Jonas"}</p>';
     iText = innerText();
-    console.assert(forventetInnerText === iText, { forventetInnerText, iText});
-    console.log("Tester godkjent");
+    console.assert(forventetInnerText === iText.outerHTML, { forventetInnerText, iText});
+
   }
   // Kjører tester
   testInnerText();
+  document.body.appendChild(innerText());
 </script>
 
 
